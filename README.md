@@ -1,8 +1,8 @@
 # Causal_Inference_CallUserRetention
 
-This repository provides a guideline to perform causal inference on the customer's retention based on the telecom churn data publicly available from Kaggle. The method used here mainly referred to Guelman and Guillén (2014). This project explored the causal effect of retention calls on customers' retention, including building lease models for each treatment (i.e., retention calls or not), training a propensity model for each user to receive a treatment (i.e., given we have only one treatment-comparison pairs, we just need to train one propensity model), matching customer pairs so that each pair includes one customer from treatment group and the other one from the comparison group, and measuring the causal effect of treatment on customer's retention.
+This repository provides a guideline to perform causal inference on the customer's retention based on the telecom churn data publicly available from Kaggle. The method used here mainly referred to Guelman and Guillén (2014). This project explored the causal effect of retention calls on customers' retention, including building lapse models for each treatment (i.e., retention calls or not), training a propensity model for each user to receive a treatment (i.e., given we have only one treatment-comparison pairs, we just need to train one propensity model), matching customer pairs so that each pair includes one customer from treatment group and the other one from the comparison group, and measuring the causal effect of treatment on customer's retention.
 
-## Building lease models for each treatment
+## Building lapse models for each treatment
 This project employed 'RetentionCalls' variable to define the treatment of each customer, i.e., customers having received retention calls were denoted as treatment, while those without referred to comparison group. With that, data was divided into treatment and comparison groups, and a lapse model was trained for each group as illustrated in globalLapseModel.py script.
 
 ## Training a propensity model
